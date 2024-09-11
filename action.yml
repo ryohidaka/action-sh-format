@@ -5,8 +5,8 @@ author: "ryohidaka"
 description: "A GitHub Action that formats shell scripts using shfmt."
 
 branding:
-  color: green
-  icon: send
+  color: yellow
+  icon: check-circle
 
 inputs:
   path:
