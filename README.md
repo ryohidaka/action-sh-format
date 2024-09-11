@@ -1,6 +1,6 @@
 # ShellScript Formatter
 
-[![release](https://badgen.net/github/release/ryohidaka/action-sh-format)](https://github.com/ryohidaka/action-sh-format/releases/)
+![GitHub Release](https://img.shields.io/github/v/release/ryohidaka/action-sh-format)
 [![Test Action](https://github.com/ryohidaka/action-sh-format/actions/workflows/test.yml/badge.svg)](https://github.com/ryohidaka/action-sh-format/actions/workflows/test.yml)
 
 A GitHub Action that formats shell scripts using [shfmt](https://github.com/mvdan/sh).
