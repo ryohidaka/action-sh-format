@@ -14,6 +14,21 @@ inputs:
     required: false
     default: "."
 
+  commit-user-name:
+    required: false
+    default: "GitHub Actions"
+    description: "Commit username. Defaults to 'GitHub Actions'."
+
+  commit-user-email:
+    required: false
+    default: "actions@github.com"
+    description: "Commit email. Defaults to 'actions@github.com'."
+
+  commit-message:
+    required: false
+    default: "chore: Format ShellScripts"
+    description: "Commit message. Defaults to 'chore: Format ShellScripts'."
+
 runs:
   using: "composite"
   steps:
@@ -23,4 +38,13 @@ runs:
 
     - name: Run shfmt
       run: ./scripts/run-shfmt.sh ${{ inputs.path }}
+      shell: bash
+
+    - name: Commit and Push
+      run: |
+        ./scripts/commit-push.sh \
+          "${{ inputs.path }}" \
+          "${{ inputs.commit-user-name }}" \
+          "${{ inputs.commit-user-email }}" \
+          "${{ inputs.commit-message }}"
       shell: bash
