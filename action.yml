@@ -8,6 +8,12 @@ branding:
   color: green
   icon: send
 
+inputs:
+  path:
+    description: "Directory path to format shell scripts."
+    required: false
+    default: "."
+
 runs:
   using: "composite"
   steps:

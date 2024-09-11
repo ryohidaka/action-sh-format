@@ -9,10 +9,12 @@ A GitHub Action that formats shell scripts using shfmt.
 
 ```yml
 - uses: ryohidaka/action-sh-format@v1
+  with:
+    path: "."
 ```
 
 ## Inputs
 
-| Input | Required | Description | Default | Example |
-| ----- | -------- | ----------- | ------- | ------- |
-| ``    |          |             | ``      | ``      |
+| Input  | Required | Description                             | Default | Example     |
+| ------ | -------- | --------------------------------------- | ------- | ----------- |
+| `path` |          | Directory path to format shell scripts. | `.`     | `./scripts` |
