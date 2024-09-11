@@ -15,4 +15,7 @@ jobs:
       - id: foo
         uses: "./"
         with:
-          path: "."
+          path: "./sample"
+
+      - name: Check diff
+        run: git diff sample
