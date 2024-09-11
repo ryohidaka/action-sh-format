@@ -8,9 +8,20 @@ A GitHub Action that formats shell scripts using [shfmt](https://github.com/mvda
 ## Usage
 
 ```yml
-- uses: ryohidaka/action-sh-format@v1
-  with:
-    path: "."
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  format-shell-scripts:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: ryohidaka/action-sh-format@v1
+        with:
+          path: "."
 ```
 
 ## Inputs
