@@ -20,3 +20,7 @@ runs:
     - name: Install shfmt
       run: ./scripts/install-shfmt.sh
       shell: bash
+
+    - name: Run shfmt
+      run: ./scripts/run-shfmt.sh ${{ inputs.path }}
+      shell: bash
