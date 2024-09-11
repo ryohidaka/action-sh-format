@@ -29,6 +29,11 @@ inputs:
     default: "chore: Format ShellScripts"
     description: "Commit message. Defaults to 'chore: Format ShellScripts'."
 
+  dry-run:
+    description: "If true, the commit and push steps will be skipped."
+    required: false
+    default: "false"
+
 runs:
   using: "composite"
   steps:
@@ -41,6 +46,7 @@ runs:
       shell: bash
 
     - name: Commit and Push
+      if: ${{ inputs.dry-run == 'false' }}
       run: |
         ./scripts/commit-push.sh \
           "${{ inputs.path }}" \

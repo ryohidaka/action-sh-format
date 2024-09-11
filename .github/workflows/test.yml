@@ -16,6 +16,7 @@ jobs:
         uses: "./"
         with:
           path: "./sample"
+          dry-run: true
 
       - name: Check diff
         run: git diff sample
