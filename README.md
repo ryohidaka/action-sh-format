@@ -29,6 +29,7 @@ jobs:
 | Input               | Description                                         | Default                      |
 | ------------------- | --------------------------------------------------- | ---------------------------- |
 | `path`              | Directory path to format shell scripts.             | `.`                          |
+| `indent`            | Set the indentation level for shfmt.                | `4`                          |
 | `commit-user-name`  | Commit username.                                    | `GitHub Actions`             |
 | `commit-user-email` | Commit email.                                       | `actions@github.com`         |
 | `commit-message`    | Commit message.                                     | `chore: Format ShellScripts` |

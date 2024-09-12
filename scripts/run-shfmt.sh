@@ -1,8 +1,9 @@
 #!/bin/bash
 set -e # Exit immediately if a command exits with a non-zero status
 
-# Get the directory path from the first argument
+# Get arguments from the inputs
 path="${1}"
+indent="${2}"
 
 # Find all .sh files in the specified directory and subdirectories
 files=$(find "$path" -name "*.sh")
@@ -21,7 +22,7 @@ echo "$files" | while read -r file; do
 		printf "[%d/%d]: %s\n" "$count" "$total" "$file"
 
 		# Format the file using shfmt (a shell script formatter)
-		shfmt -w "$file"
+		shfmt -w -i "$indent" "$file"
 
 		# Increment the counter
 		count=$((count + 1))

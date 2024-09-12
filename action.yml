@@ -14,6 +14,13 @@ inputs:
     required: false
     default: "."
 
+  # shfmt options
+  indent:
+    description: "Set the indentation level for shfmt. Default is 4."
+    required: false
+    default: "4"
+
+  # commit options
   commit-user-name:
     required: false
     default: "GitHub Actions"
@@ -42,7 +49,10 @@ runs:
       shell: bash
 
     - name: Run shfmt
-      run: ./scripts/run-shfmt.sh ${{ inputs.path }}
+      run: |
+        ./scripts/run-shfmt.sh \
+          ${{ inputs.path }} \
+          ${{ inputs.indent }}
       shell: bash
 
     - name: Commit and Push
