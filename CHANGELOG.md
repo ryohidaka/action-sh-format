@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://github.com/ryohidaka/action-sh-format/compare/v0.1.0...v0.2.0) (2024-09-12)
+
+
+### Features
+
+* Add indent option. ([3423a37](https://github.com/ryohidaka/action-sh-format/commit/3423a373ae70c649c250b735deb3b0add09f82ed))
+
 ## 0.1.0 (2024-09-11)
 
 
