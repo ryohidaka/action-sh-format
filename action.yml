@@ -47,13 +47,17 @@ runs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
+    - name: Set GitHub Path
+      run: echo "GITHUB_ACTION_PATH=${GITHUB_ACTION_PATH}" >> $GITHUB_ENV
+      shell: bash
+
     - name: Install shfmt
-      run: scripts/install-shfmt.sh
+      run: $GITHUB_ACTION_PATH/scripts/install-shfmt.sh
       shell: bash
 
     - name: Run shfmt
       run: |
-        scripts/run-shfmt.sh \
+        $GITHUB_ACTION_PATH/scripts/run-shfmt.sh \
           ${{ inputs.path }} \
           ${{ inputs.indent }}
       shell: bash
@@ -61,7 +65,7 @@ runs:
     - name: Commit and Push
       if: ${{ inputs.dry-run == 'false' }}
       run: |
-        scripts/commit-push.sh \
+        $GITHUB_ACTION_PATH/scripts/commit-push.sh \
           "${{ inputs.path }}" \
           "${{ inputs.commit-user-name }}" \
           "${{ inputs.commit-user-email }}" \
