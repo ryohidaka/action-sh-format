@@ -16,17 +16,17 @@ echo "::group::Formatting Shell Scripts"
 
 # Iterate over each found file
 echo "$files" | while read -r file; do
-	# Check if the file name is not empty
-	if [ -n "$file" ]; then
-		# Display progress with current file and total count
-		printf "[%d/%d]: %s\n" "$count" "$total" "$file"
+    # Check if the file name is not empty
+    if [ -n "$file" ]; then
+        # Display progress with current file and total count
+        printf "[%d/%d]: %s\n" "$count" "$total" "$file"
 
-		# Format the file using shfmt (a shell script formatter)
-		shfmt -w -i "$indent" "$file"
+        # Format the file using shfmt (a shell script formatter)
+        shfmt -w -i "$indent" "$file"
 
-		# Increment the counter
-		count=$((count + 1))
-	fi
+        # Increment the counter
+        count=$((count + 1))
+    fi
 done
 
 echo "::notice::All shell scripts have been successfully formatted."
