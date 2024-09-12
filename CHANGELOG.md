@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/ryohidaka/action-sh-format/compare/v0.2.0...v0.2.1) (2024-09-12)
+
+
+### Bug Fixes
+
+* Fixed a bug that the script directory could not be referenced. ([6179061](https://github.com/ryohidaka/action-sh-format/commit/6179061215fe81abeb1eae1f5c7d87a93663eb4b))
+
 ## [0.2.0](https://github.com/ryohidaka/action-sh-format/compare/v0.1.0...v0.2.0) (2024-09-12)
 
 
