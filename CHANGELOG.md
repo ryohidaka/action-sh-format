@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.4](https://github.com/ryohidaka/action-sh-format/compare/v0.2.3...v0.2.4) (2024-09-12)
+
+
+### Bug Fixes
+
+* No commit and push if no diffs. ([ff7e620](https://github.com/ryohidaka/action-sh-format/commit/ff7e6205ca12c7d841d8863489189fb703b5d761))
+
 ## [0.2.3](https://github.com/ryohidaka/action-sh-format/compare/v0.2.2...v0.2.3) (2024-09-12)
 
 
