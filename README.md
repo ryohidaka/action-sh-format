@@ -2,6 +2,7 @@
 
 ![GitHub Release](https://img.shields.io/github/v/release/ryohidaka/action-sh-format)
 [![Test Action](https://github.com/ryohidaka/action-sh-format/actions/workflows/test.yml/badge.svg)](https://github.com/ryohidaka/action-sh-format/actions/workflows/test.yml)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 A GitHub Action that formats shell scripts using [shfmt](https://github.com/mvdan/sh).
 
