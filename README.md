@@ -20,7 +20,7 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: ryohidaka/action-sh-format@v0.2.4
+      - uses: ryohidaka/action-sh-format@v0.3.0
         with:
           path: "."
           indent: 4
