@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.1](https://github.com/ryohidaka/action-sh-format/compare/v0.3.0...v0.3.1) (2024-10-04)
+
+
+### Bug Fixes
+
+* Fixed process to commit and push. ([1fc80db](https://github.com/ryohidaka/action-sh-format/commit/1fc80db2c3e40eeb02d75271db3996cfd2a21bcd))
+
 ## [0.3.0](https://github.com/ryohidaka/action-sh-format/compare/v0.2.4...v0.3.0) (2024-10-04)
 
 
