@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.2](https://github.com/ryohidaka/action-sh-format/compare/v0.3.1...v0.3.2) (2024-10-05)
+
+
+### Bug Fixes
+
+* Revert "feat: Changeed Commit and Push processes to `ryohidaka/action-commit-push`." ([5e5181d](https://github.com/ryohidaka/action-sh-format/commit/5e5181d00fc651a2613d644bea672eae93c8fbaa))
+* Revert "fix: Fixed process to commit and push." ([d402e2c](https://github.com/ryohidaka/action-sh-format/commit/d402e2c1756591cbac89456985419495b65e25ed))
+
 ## [0.3.1](https://github.com/ryohidaka/action-sh-format/compare/v0.3.0...v0.3.1) (2024-10-04)
 
 
