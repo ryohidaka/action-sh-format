@@ -63,7 +63,11 @@ runs:
       shell: bash
 
     - name: Commit and Push
-      uses: ryohidaka/action-commit-push@v0.1.0
-      with:
-        files: "${{ inputs.path }}"
-        dry-run: ${{ inputs.dry-run }}
+      if: ${{ inputs.dry-run == 'false' }}
+      run: |
+        $GITHUB_ACTION_PATH/scripts/commit-push.sh \
+          "${{ inputs.path }}" \
+          "${{ inputs.commit-user-name }}" \
+          "${{ inputs.commit-user-email }}" \
+          "${{ inputs.commit-message }}"
+      shell: bash
