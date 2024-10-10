@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.0](https://github.com/ryohidaka/action-sh-format/compare/v0.3.2...v0.4.0) (2024-10-10)
+
+
+### Features
+
+* Change commit and push process to `action-commit-push` ([57fc72f](https://github.com/ryohidaka/action-sh-format/commit/57fc72f90778f3db2760ff48c7782bd35279b4ba))
+
 ## [0.3.2](https://github.com/ryohidaka/action-sh-format/compare/v0.3.1...v0.3.2) (2024-10-05)
 
 
