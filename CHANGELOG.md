@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.0](https://github.com/ryohidaka/action-sh-format/compare/v0.4.0...v0.5.0) (2025-04-27)
+
+
+### Features
+
+* Change default commit-user-name and commit-user-email. ([5c95d6f](https://github.com/ryohidaka/action-sh-format/commit/5c95d6f3500f6d7608af18c54c86e99f4b5a7d68))
+
 ## [0.4.0](https://github.com/ryohidaka/action-sh-format/compare/v0.3.2...v0.4.0) (2024-10-10)
 
 
