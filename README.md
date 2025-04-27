@@ -24,22 +24,22 @@ jobs:
         with:
           path: "."
           indent: 4
-          commit-user-name: "GitHub Actions"
-          commit-user-email: "actions@github.com"
+          commit-user-name: "github-actions[bot]"
+          commit-user-email: "41898282+github-actions[bot]@users.noreply.github.com"
           commit-message: "chore: Format ShellScripts"
           dry-run: false
 ```
 
 ## Inputs
 
-| Input               | Description                                         | Required | Default                      |
-| ------------------- | --------------------------------------------------- | -------- | ---------------------------- |
-| `path`              | Directory path to format shell scripts.             | ✅       | `.`                          |
-| `indent`            | Set the indentation level for shfmt.                |          | `4`                          |
-| `commit-user-name`  | Commit username.                                    |          | `GitHub Actions`             |
-| `commit-user-email` | Commit email.                                       |          | `actions@github.com`         |
-| `commit-message`    | Commit message.                                     |          | `chore: Format ShellScripts` |
-| `dry-run`           | If true, the commit and push steps will be skipped. |          | `false`                      |
+| Input               | Description                                         | Required | Default                                                 |
+| ------------------- | --------------------------------------------------- | -------- | ------------------------------------------------------- |
+| `path`              | Directory path to format shell scripts.             | ✅       | `.`                                                     |
+| `indent`            | Set the indentation level for shfmt.                |          | `4`                                                     |
+| `commit-user-name`  | Commit username.                                    |          | `github-actions[bot]`                                   |
+| `commit-user-email` | Commit email.                                       |          | `41898282+github-actions[bot]@users.noreply.github.com` |
+| `commit-message`    | Commit message.                                     |          | `chore: Format ShellScripts`                            |
+| `dry-run`           | If true, the commit and push steps will be skipped. |          | `false`                                                 |
 
 ## License
 
